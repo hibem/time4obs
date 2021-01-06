@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+<link rel="stylesheet" href="./css/time.css" type="text/css" media="all" />
+</head>
+<body> 
+<div>
+    颜色：<input id="jsc" data-jscolor="", onInput="update(this.jscolor)"> 
+  </div>
+  <div>
+    <p>字体：</p>
+    <form id="font">
+      <input type="radio" id="ftTeko" name="cf" value="Teko">
+      <label for="ftTeko" class="button">Teko</label>
+      <input type="radio" id="ftPirataOne" name="cf" value="Pirata One">
+      <label for="ftPirataOne" class="button">Pirata One</label>
+      <input type="radio" id="ftc" name="cf">
+      <input id="ftcInput" placeholder="自定义字体名称（本地字体）">
+    </form>
+  </div>
+  <div id="fzd">
+    <p>字号：</p>
+    <button data-value="-10">--</button><button data-value="-1">-</button>
+    <span>30px</span>
+    <button data-value="1">+</button><button data-value="10">++</button>
+  </div>
+  <br>
+  <button id="save">保存</button>
+  <button id="reset">重置</button>
+  <span id="time"></span>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jscolor/2.4.2/jscolor.min.js"></script>
+<script src="./js/time.js"></script>
+</body>
+</html>
